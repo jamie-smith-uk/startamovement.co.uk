@@ -33,6 +33,56 @@ a.class1:focus {
   color: #FFFFFF;
 }
 
+.error-text {
+  color: #CC0000;
+}
+
+.mailchimp {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: normal;
+  text-align: left;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 a.class2 {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -44,13 +94,15 @@ a.class2:focus {
   color: #7E6AC2;
 }
 
-h1,
+h1 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto','Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
   font-size: 16px;
@@ -259,8 +311,16 @@ header .header-reduced-content .header-reduced-content-inner p {
 
 ul {
   text-align: left;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
 }
+
+span.highlighted {
+  color: rgba(255, 255, 255, 1);
+  font-size: 19px;
+}
+
+
 
 .section-heading {
   margin-top: 0;
@@ -438,10 +498,11 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffffff;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto','Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
   border-radius: 300px;
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
 }
 .btn-xl {
