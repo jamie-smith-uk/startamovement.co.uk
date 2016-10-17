@@ -37,11 +37,66 @@ a.class1:focus {
   color: #CC0000;
 }
 
+.success-text {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
 .mailchimp {
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
+  margin: 30px;
+}
+
+.mailchimp-center {
+  text-align: center;
+}
+
+.mailchimp-left {
   text-align: left;
+  font-weight: normal;
+}
+
+
+#mc-embedded-subscribe-form input, #mc-embedded-subscribe-form textarea {
+ padding: 15px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ margin-bottom: 10px;
+ width: 100%;
+ box-sizing: border-box;
+ color: #2C3E50;
+ font-size: 16px;
+}
+
+#mc-embedded-subscribe-form .action-button {
+	cursor: pointer;
+  width: 120px;
+  color: #ffffff;
+  background-color: #7E6AC2;
+  border-color: #7E6AC2;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+#mc-embedded-subscribe-form .btn-primary:hover,
+#mc-embedded-subscribe-form.btn-primary:focus,
+#mc-embedded-subscribe-form .btn-primary.focus,
+#mc-embedded-subscribe-form .btn-primary:active,
+#mc-embedded-subscribe-form .btn-primary.active
+{
+  color: #555555;
+  background-color: #eeeeee;
+  border-color: #edeeee;
+}
+
+.blurred {
+  box-shadow: 0px 0px 1px 1px rgba(255,255,255,1);
+  text-shadow: 0px 0px 1px rgba(51, 51, 51, 0.9);
+  /* transform: scale(0.9); */
+  opacity: 0.3;
 }
 
 .modal {
@@ -64,8 +119,11 @@ a.class1:focus {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    /*width: 30%;*/
+    width: 350px;
+
 }
+
 
 /* The Close Button */
 .close {
@@ -88,6 +146,8 @@ a.class2 {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #7E6AC2;
+  cursor: pointer;
+  text-decoration: underline;
 }
 a.class2:hover,
 a.class2:focus {
